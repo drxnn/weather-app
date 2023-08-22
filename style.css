@@ -130,6 +130,7 @@ table {
 
 body {
   background-color: azure;
+  font-size: 62.5%;
 }
 #parent-wrapper {
   width: 90%;
@@ -140,17 +141,61 @@ body {
 }
 
 .section-box {
+  border-radius: 10px;
 }
 
 #box1 {
   width: 35rem;
   height: 40rem;
-  background-color: black;
+  background-color: #1b4965;
 }
 
 #box2 {
   width: 40rem;
   height: 40rem;
-  background-color: blue;
+  background-color: #62b6cb;
   flex-grow: 1;
+}
+
+/* SEARCH BAR */
+
+.search-bar {
+  width: 100%;
+  height: 3rem;
+  color: black;
+  display: flex;
+}
+
+#search-font {
+  width: 100%;
+  background-color: white;
+  height: 3rem;
+}
+
+.search-bar {
+  display: flex;
+  padding: 5px;
+  margin-top: 2.5rem;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-font {
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(255, 255, 255, 0.43);
+  border-radius: 0 5px 5px 0;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: inset 0 0 0 2px black; */
 }

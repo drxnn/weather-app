@@ -5,10 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
   <body>
     <section id="parent-wrapper">
-      <section class="section-box" id="box1"></section>
+      <section class="section-box" id="box1">
+        <div class="search-bar">
+          <input type="text" placeholder="Enter City:" id="search-city" />
+          <div id="search-btn-city" class="search-font">
+            <span class="material-symbols-outlined"> search </span>
+          </div>
+        </div>
+        <div>
+          <button>GET WEATHER</button>
+        </div>
+      </section>
       <section class="section-box" id="box2"></section>
     </section>
 
