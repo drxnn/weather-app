@@ -3,7 +3,7 @@
 // TO DO:
 // throw error if input is not a valid value => not a city
 // add use current location function
-// add wind data below everything else
+// add wind speed below everything else(with icon)
 
 // // Geo code fetch
 let cityName = document.getElementById("city-name");
@@ -12,6 +12,8 @@ let highestTemp = document.getElementById("highest-temp");
 let lowestTemp = document.getElementById("lowest-temp");
 let weatherDescription = document.getElementById("weather-description");
 let humidity = document.getElementById("humidity-level");
+let windSpeed = document.getElementById("wind-speed");
+let windDegree = document.getElementById("wind-degree");
 let longitude;
 let latitude;
 let city;
@@ -73,6 +75,9 @@ const weatherFetch = (lat, lon) => {
       weatherDescription.innerText = data.weather[0].description;
       humidity.innerText = `Humidity: ${data.main.humidity}`;
 
+      // put wind data into html element
+      windSpeed.innerText = data.wind.speed;
+      windDegree.innerText = data.wind.deg;
       // img to show weather icon
       weatherIconCode = data.weather[0].icon;
       document.querySelector(

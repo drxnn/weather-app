@@ -250,3 +250,10 @@ body {
   text-align: center;
   font-size: 1rem;
 }
+
+.wind-display {
+  border: 10px pink solid;
+  width: 7rem;
+  height: 1rem;
+  margin-top: 5rem;
+}
