@@ -12,18 +12,40 @@
   </head>
   <body>
     <section id="parent-wrapper">
-      <section class="section-box" id="box1">
+      <section class="section-box" id="box2">
         <div class="search-bar">
           <input type="text" placeholder="Enter City:" id="search-city" />
           <div id="search-btn-city" class="search-font">
             <span class="material-symbols-outlined"> search </span>
           </div>
         </div>
-        <div>
-          <button>GET WEATHER</button>
+
+        <!--  -->
+        <div id="cityName">
+          <h2 id="city-name"></h2>
+          <h2 id="current-temp"></h2>
         </div>
+        <section class="city-display">
+          <div id="img-holder">
+            <img src="" alt="" />
+          </div>
+
+          <div id="weatherDescription">
+            <h2 id="weather-description"></h2>
+          </div>
+        </section>
+        <section class="temp-display">
+          <div id="currentTemp">
+            <h2 id="highest-temp"></h2>
+            <h2 id="lowest-temp"></h2>
+          </div>
+        </section>
+        <section class="humid-wind">
+          <div id="humidity">
+            <h2 id="humidity-level"></h2>
+          </div>
+        </section>
       </section>
-      <section class="section-box" id="box2"></section>
     </section>
 
     <script src="main.js"></script>
