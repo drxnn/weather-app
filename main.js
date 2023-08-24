@@ -65,19 +65,21 @@ const weatherFetch = (lat, lon) => {
       console.log(data, data.main, data.weather);
       console.log("button clicked");
       cityName.innerText = data.name;
-      currentTemp.innerText = `${convertKelvinToCelcius(data.main.temp)} C`;
-      highestTemp.innerText = `H: ${convertKelvinToCelcius(
+      currentTemp.innerHTML = `${convertKelvinToCelcius(
+        data.main.temp
+      )} &#8451;`;
+      highestTemp.innerHTML = `H: ${convertKelvinToCelcius(
         data.main.temp_max
-      )} C`;
-      lowestTemp.innerText = `L: ${convertKelvinToCelcius(
+      )} &#8451;`;
+      lowestTemp.innerHTML = `L: ${convertKelvinToCelcius(
         data.main.temp_min
-      )} C`;
+      )} &#8451;`;
       weatherDescription.innerText = data.weather[0].description;
-      humidity.innerText = `Humidity: ${data.main.humidity}`;
+      humidity.innerText = `Humidity: ${data.main.humidity}%`;
 
       // put wind data into html element
-      windSpeed.innerText = data.wind.speed;
-      windDegree.innerText = data.wind.deg;
+      windSpeed.innerText = ` Wind Speed: ${data.wind.speed}`;
+      windDegree.innerText = `Wind Deg: ${data.wind.deg}`;
       // img to show weather icon
       weatherIconCode = data.weather[0].icon;
       document.querySelector(
